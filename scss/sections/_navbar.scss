@@ -1,0 +1,42 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+
+.menu{
+ // @include gradient;
+ background-color: $primary;
+
+ .logo{
+  color: $h1 !important;
+ }
+
+ .small{
+  text-transform: lowercase;
+  font-size: 0.75rem;
+  color: $h2;
+ }
+
+ i{
+  color: $textColor1;
+ }
+
+ li{
+  padding: 0, 0.7rem;
+ }
+
+ a{
+  color: $textColor1 !important;
+  text-transform: capitalize;
+  font-weight: 500;
+
+ }
+
+}
+
+.nav-item{
+ a{
+  &:hover{
+   color: $c1 !important;
+  }
+ }
+}
